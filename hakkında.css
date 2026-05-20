@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0f2027 ;
+    color: #2C3947;
+}
+
+header{
+     background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+     color: white;
+     text-align: center;
+     padding: 30px; 
+}
+
+header h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav{
+    background:white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    color:#454040;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #406093;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.card-title {
+    padding: 15px;
+    background: #1256c5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-title:hover {
+    background: #609af8;
+}
+
+/* CONTENT */
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    padding: 0 15px;
+    background: #f8f9fb;
+}
+
+/* ACTIVE */
+.card.active .card-content {
+    max-height: 300px;
+    padding: 15px;
+}
+
+footer{
+    background: #111827;
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    color: #cbd5e1;
+}

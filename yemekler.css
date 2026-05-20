@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0f2027 ;
+    color: #2C3947;
+}
+
+header{
+     background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+     color: white;
+     text-align: center;
+     padding: 30px; 
+}
+
+header h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav{
+    background:white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    color:#454040;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #406093;
+}
+
+.yemekler{
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+    gap: 30px;
+    padding-bottom: 70px;
+}
+
+.kart{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: linear-gradient(to top,#0f2027,#203a43,#2c5364);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+.kart:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #7AAACE;
+}
+
+.yazi{
+    width: 45%;
+    padding: 40px;
+}
+
+.yazi h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #f59e0b;
+}
+
+.yazi p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #e2e8f0;
+}
+
+.resim{
+    width: 55%;
+    height: 420px;
+}
+
+.resim img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+footer{
+    background:#0f172a;
+    color:#aaa;
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:900px){
+
+    .kart{
+        flex-direction: column;
+    }
+
+    .yazi{
+        width: 100%;
+    }
+
+    .resim{
+        width: 100%;
+    }
+
+}

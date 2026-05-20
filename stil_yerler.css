@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0f2027 ;
+    color: #2C3947;
+}
+
+header{
+     background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+     color: white;
+     text-align: center;
+     padding: 30px; 
+}
+
+header h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav{
+    background:white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    color:#454040;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #406093;
+}
+/* BAŞLIK */
+
+.baslik{
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.baslik h2{
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.baslik p{
+    color: gray;
+    font-size: 18px;
+}
+
+/* CARD ALANI */
+
+.kartlar{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    padding-bottom: 70px;
+}
+
+.card{
+  background: linear-gradient(to top,#0f2027,#203a43,#2c5364);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.07);
+    box-shadow: 0 0 25px #7AAACE;
+    transition: 0.3s;
+}
+
+.card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h3{
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.card-content p{
+    color: #fffefe;
+    line-height: 1.7;
+    font-size: 16px;
+    text-align:justify;
+}
+
+/* FOOTER */
+
+
+footer{
+    background:#0f172a;
+    color:#aaa;
+    text-align:center;
+    padding:40px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+    font-size: 38px;
+}
+
+header p{
+    font-size: 15px;
+}
+
+nav{
+    gap: 15px;
+}
+
+nav a{
+    font-size: 15px;
+}
+
+.baslik h2{
+    font-size: 32px;
+}
+
+}
